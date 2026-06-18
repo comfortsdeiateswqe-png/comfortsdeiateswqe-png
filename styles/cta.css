@@ -26,3 +26,8 @@
   margin: 0 auto 30px;
   color: var(--text );
 }
+
+.section-heading1 h2{
+  
+  color: var(--whitetext);  
+}
