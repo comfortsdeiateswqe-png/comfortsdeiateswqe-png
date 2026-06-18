@@ -1,4 +1,3 @@
-const resultCounterSelector = "#results [data-count]";
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const formatResultCount = (value, counter) => {
@@ -47,9 +46,15 @@ const animateResultCount = (counter) => {
 };
 
 const initializeResultCounters = (root = document) => {
-  const counters = root.matches?.(resultCounterSelector)
-    ? [root]
-    : [...root.querySelectorAll?.(resultCounterSelector) ?? []];
+  const resultsSection = root.matches?.("#results")
+    ? root
+    : root.querySelector?.("#results");
+
+  if (!resultsSection) {
+    return;
+  }
+
+  const counters = resultsSection.querySelectorAll("[data-count]");
 
   counters.forEach((counter) => {
     if (counter.dataset.counterReady === "true") {
