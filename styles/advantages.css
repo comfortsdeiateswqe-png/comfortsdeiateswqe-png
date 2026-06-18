@@ -1,0 +1,51 @@
+.advantages-section {
+  background: rgba(255, 255, 255, 0.58);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 96px 32px;
+}
+
+.advantages-title {
+  margin-bottom: 48px;
+  color: var(--primary);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+  row-gap: 48px;
+}
+
+.advantage-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.advantage-icon {
+  flex-shrink: 0;
+  padding-top: 3px;
+  color: var(--primary);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.advantage-content h3 {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.advantage-content p {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.6;
+}

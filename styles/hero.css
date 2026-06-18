@@ -1,0 +1,132 @@
+.hero {
+  padding: 92px 0 84px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+  align-items: center;
+  gap: 56px;
+}
+
+.hero h1 {
+  max-width: 790px;
+  margin: 0 0 24px;
+  color: var(--navy);
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 0;
+  color: #344255;
+  font-size: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 500px;
+  border-left: 1px solid var(--line);
+}
+
+.route-line {
+  position: absolute;
+  left: 42px;
+  right: -80px;
+  top: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), rgba(242, 140, 40, 0), var(--navy));
+  transform: rotate(-18deg);
+  transform-origin: left center;
+}
+
+.route-line::before,
+.route-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 10px rgba(242, 140, 40, 0.13);
+}
+
+.route-line::before {
+  left: 0;
+}
+
+.route-line::after {
+  right: 0;
+  background: var(--navy);
+  box-shadow: 0 0 0 10px rgba(7, 26, 51, 0.13);
+}
+
+.route-card {
+  position: absolute;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(145deg, var(--navy), var(--navy-soft));
+  color: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: 0 28px 70px rgba(7, 26, 51, 0.26);
+}
+
+.route-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.route-card strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.route-card-main {
+  left: 70px;
+  top: 54px;
+  width: min(360px, calc(100% - 70px));
+}
+
+.route-card-small {
+  width: 230px;
+  background: #ffffff;
+  color: var(--navy);
+  border: 1px solid var(--line);
+}
+
+.route-card-small span {
+  color: var(--accent-dark);
+}
+
+.route-card-small strong {
+  font-size: 20px;
+}
+
+.top-card {
+  right: 0;
+  top: 210px;
+}
+
+.bottom-card {
+  left: 92px;
+  bottom: 48px;
+}

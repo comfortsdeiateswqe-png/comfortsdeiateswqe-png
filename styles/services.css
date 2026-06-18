@@ -1,0 +1,46 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.service-card {
+  min-height: 250px;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.66);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.service-card:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+.service-card h3 {
+  position: relative;
+  margin: 0 0 16px;
+  padding-top: 20px;
+  color: var(--navy);
+  font-size: 21px;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.service-card h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 3px;
+  background: var(--accent);
+}
+
+.service-card p {
+  margin: 0;
+  color: #526072;
+  font-size: 15.5px;
+}

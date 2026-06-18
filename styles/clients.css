@@ -1,0 +1,79 @@
+.clients-section {
+  background: #ffffff;
+}
+
+.intro-text {
+  max-width: 940px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  justify-content: center;
+  gap: 22px;
+}
+
+.logos-grid div {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-right: none;
+  border-bottom: none;
+  color: var(--navy);
+  background: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.logos-grid div:last-child {
+  grid-column: span 4;
+  min-height: 76px;
+  color: var(--accent-dark);
+  background: #fff8f0;
+}
+
+.partners-block {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
+}
+
+.client-logo {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.78;
+  transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
+}
+
+.client-logo img {
+  max-width: 148px;
+  max-height: 60x;
+  object-fit: contain;
+}
+
+.client-logo:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.client-logo:hover img {
+  filter: grayscale(0) brightness(1);
+}
+
+.client-logo-text {
+  color: #f97316;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}

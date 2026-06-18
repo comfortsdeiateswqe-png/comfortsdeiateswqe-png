@@ -1,0 +1,133 @@
+.footer {
+  padding: 64px 0;
+  background: #06162b;
+  color: #ffffff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.42fr 0.58fr;
+  gap: 52px;
+}
+
+.footer h2 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: -0.04em;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-nav,
+.footer-contact {
+  padding-left: 28px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-menu {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus-visible {
+  color: #ffbf7d;
+  transform: translateX(3px);
+}
+
+.footer-contact-list {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contact-list li {
+  display: grid;
+  gap: 4px;
+}
+
+.footer-contact-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-contact-list .contact-icon {
+  font-size: 18px;
+}
+
+.footer-contact-list a,
+.footer-contact-value {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-list a:hover,
+.footer-contact-list a:focus-visible {
+  color: #ffbf7d;
+}
+
+@media (max-width: 680px) {
+  .footer {
+    padding: 46px 0;
+  }
+
+  .footer h2 {
+    font-size: 24px;
+  }
+
+  .footer-contact-list {
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .footer-menu {
+    gap: 8px;
+  }
+
+  .footer-contact-list a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    padding: 38px 0;
+  }
+
+  .footer-nav,
+  .footer-contact {
+    padding-top: 22px;
+  }
+
+  .footer-contact-list a {
+    font-size: 15px;
+  }
+}

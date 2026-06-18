@@ -1,0 +1,115 @@
+@media (max-width: 1060px) {
+  .hero-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+    border-left: 0;
+  }
+
+  .cards-grid,
+  .advantages-grid,
+  .results-grid,
+  .logos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wide-result,
+  .logos-grid div:last-child {
+    grid-column: span 2;
+  }
+
+  .footer-nav,
+  .footer-contact {
+    padding-left: 0;
+    padding-top: 28px;
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+
+  .hero {
+    padding: 62px 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p,
+  .section-text p,
+  .intro-text p,
+  .partners-block p,
+  .footer p,
+  .cta-box p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero-actions,
+  .btn {
+    width: 100%;
+  }
+
+  .cards-grid,
+  .advantages-grid,
+  .footer-grid,
+  .results-grid,
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+
+  .wide-result,
+  .logos-grid div:last-child {
+    grid-column: span 1;
+  }
+
+  .service-card,
+  .advantage-card,
+  .result-card {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .hero-visual {
+    min-height: 410px;
+  }
+
+  .route-card-main {
+    left: 0;
+    width: 100%;
+  }
+
+  .top-card {
+    right: 0;
+    top: 190px;
+  }
+
+  .bottom-card {
+    left: 0;
+    bottom: 42px;
+  }
+}

@@ -1,0 +1,28 @@
+.cta-section {
+  padding: 1px 0;
+  background: #ffffff;
+}
+
+.cta-box {
+  padding: clamp(34px, 6vw, 70px);
+  background:
+    radial-gradient(circle at 85% 2%, rgba(242, 140, 40, 0.22), transparent 34%),
+    linear-gradient(135deg, var(--surface), var(--surface-dark));
+  color: var(--navy);
+  text-align: center;
+}
+
+.cta-box h2 {
+  max-width: 880px;
+  margin: 0 auto 20px;
+  color: var(--navy);
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.06em;
+}
+
+.cta-box p {
+  max-width: 840px;
+  margin: 0 auto 30px;
+  color: var(--text );
+}

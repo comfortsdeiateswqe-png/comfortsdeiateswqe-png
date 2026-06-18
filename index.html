@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТОВ «КОМФОРТРАНС» — вантажні перевезення</title>
+  <meta name="description" content="ТОВ «КОМФОРТРАНС» — логістична компанія, яка надає послуги з організації вантажних перевезень по Україні та в міжнародному сполученні." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header hx-get="partials/index.header.html" hx-trigger="load" hx-swap="outerHTML"></header>
+
+  <main id="top">
+    <section hx-get="partials/index.hero.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.about.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.services.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.advantages.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.results.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.clients.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.team.html" hx-trigger="load" hx-swap="outerHTML"></section>
+    <section hx-get="partials/index.cta.html" hx-trigger="load" hx-swap="outerHTML"></section>
+  </main>
+
+  <footer hx-get="partials/index.footer.html" hx-trigger="load" hx-swap="outerHTML"></footer>
+  <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+  <script src="scripts/contacts.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/results.js"></script>
+</body>
+</html>
